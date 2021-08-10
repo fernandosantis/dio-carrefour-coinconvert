@@ -12,5 +12,4 @@ class GetExchangeValueUseCase(
     override suspend fun execute(param: String): Flow<ExchangeResponseValue> {
         return repository.getExchangeValue(param)
     }
-
 }
